@@ -28,40 +28,40 @@ button.textmaker {
   display:block;
 }
 button.basra {
-  top:22%;
-  left:20%;
-}
-button.kilwa {
-  top:70%;
-  left:20%;
-}
-button.pandua {
-  top:40%;
-  left:60%;
-}
-button.guangzhou {
-  top:40%;
-  left:80%;
-}
-button.mogadishu {
-  top:35%;
-  left:28%;
-}
-button.zhenghe {
-  top:50%;
-  left:70%;
-}
-button.alquzlum {
-  top:25%;
+  top:16%;
   left:15%;
 }
-button.indonesia {
-  top:60%;
+button.kilwa {
+  top:90%;
+  left:7%;
+}
+button.pandua {
+  top:30%;
+  left:57%;
+}
+button.guangzhou {
+  top:30%;
   left:85%;
+}
+button.mogadishu {
+  top:68%;
+  left:15%;
+}
+button.zhenghe {
+  top:55%;
+  left:80%;
+}
+button.alquzlum {
+  top:19%;
+  left:2%;
+}
+button.indonesia {
+  top:73%;
+  left:70%;
 }
 button.calicut {
   top: 55%;
-  left: 50%;
+  left: 43%;
 }
 button.dagama {
   top:80%;
