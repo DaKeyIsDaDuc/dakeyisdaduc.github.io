@@ -16,10 +16,45 @@ button.textmaker {
   background:gray;
   border:0px solid black;
   position:absolute;
-  top:25%;
-  left:25%;
   display:block;
 }
-button.textmaker:active {
-  color:red;
+button.basra {
+  top:22%;
+  left:20%;
+}
+button.kilwa {
+  top:70%;
+  left:20%;
+}
+button.pandua {
+  top:40%;
+  left:60%;
+}
+button.guangzhou {
+  top:40%;
+  left:80%;
+}
+button.mogadishu {
+  top:35%;
+  left:28%;
+}
+button.zhenghe {
+  top:50%;
+  left:70%;
+}
+button.alquzlum {
+  top:25%;
+  left:15%;
+}
+button.indonesia {
+  top:60%;
+  left:85%;
+}
+button.calicut {
+  top: 55%;
+  left: 50%;
+}
+button.dagama {
+  top:80%;
+  left:20%;
 }
