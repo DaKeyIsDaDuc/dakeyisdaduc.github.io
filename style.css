@@ -15,7 +15,7 @@ button.textmaker {
   background:transparent;
   border:0 solid transparent;
   position:absolute;
-  top:calc(25%-15);
-  left:calc(25%-15);
+  top:25%;
+  left:25%;
   display:block;
 }
