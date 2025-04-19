@@ -19,3 +19,6 @@ button.textmaker {
   left:25%;
   display:block;
 }
+button.textmaker:active {
+  color:darkred;
+}
