@@ -8,6 +8,7 @@ img.map {
 img.button {
   height: 150%;
   width: 150%;
+  text-align: center;
 }
 button.textmaker {
   height:50px;
