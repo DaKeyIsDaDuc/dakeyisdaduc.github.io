@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg version="1.1" viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <linearGradient id="a">
+   <stop stop-color="#ccc" offset="0"/>
+   <stop offset=".5"/>
+   <stop stop-color="#b3b3b3" offset="1"/>
+  </linearGradient>
+  <filter id="g" color-interpolation-filters="sRGB">
+   <feGaussianBlur stdDeviation="3.5428571"/>
+  </filter>
+  <filter id="f" color-interpolation-filters="sRGB">
+   <feGaussianBlur stdDeviation="9.8027192"/>
+  </filter>
+  <linearGradient id="e" x1="472.81" x2="466.45" y1="167.58" y2="849.44" gradientUnits="userSpaceOnUse" xlink:href="#a"/>
+  <linearGradient id="d" x1="106.1" x2="791.04" y1="497.12" y2="505.03" gradientUnits="userSpaceOnUse" xlink:href="#a"/>
+  <radialGradient id="b" cx="431.97" cy="503.7" r="354.79" gradientUnits="userSpaceOnUse">
+   <stop stop-color="#ff5000" offset="0"/>
+   <stop stop-color="#780000" offset="1"/>
+  </radialGradient>
+  <linearGradient id="c" x1="1410.5" x2="1410.2" y1="228.08" y2="478.6" gradientUnits="userSpaceOnUse">
+   <stop stop-color="#ff8080" offset="0"/>
+  </linearGradient>
+ </defs>
+ <g transform="translate(0 -552.36)" fill-rule="evenodd">
+  <path transform="matrix(-.60774 0 0 .60774 518.35 490.33)" d="m802.86 509.51a354.29 354.29 0 1 1 -708.57 0 354.29 354.29 0 1 1 708.57 0z" fill="url(#e)"/>
+  <path transform="matrix(.55393 -.016596 .016596 .55393 -11.195 525.2)" d="m802.86 509.51a354.29 354.29 0 1 1 -708.57 0 354.29 354.29 0 1 1 708.57 0z" fill="url(#d)" filter="url(#g)"/>
+  <path transform="matrix(.48769 0 0 .48769 26.972 551.5)" d="m802.86 509.51a354.29 354.29 0 1 1 -708.57 0 354.29 354.29 0 1 1 708.57 0z" fill="url(#b)" stroke="#000" stroke-width="1px"/>
+  <path transform="matrix(.56837 .021577 -.023565 .62075 -549.49 451.74)" d="m1612.2 371.52a202.03 119.2 0 1 1 -404.06 0 202.03 119.2 0 1 1 404.06 0z" fill="url(#c)" filter="url(#f)"/>
+ </g>
+</svg>
