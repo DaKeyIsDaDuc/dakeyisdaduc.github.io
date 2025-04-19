@@ -10,8 +10,8 @@ img.button {
   width: 100%;
 }
 button.textmaker {
-  height:30;
-  width:30;
+  height:10;
+  width:10;
   background:transparent;
   border:0px solid black;
   position:absolute;
