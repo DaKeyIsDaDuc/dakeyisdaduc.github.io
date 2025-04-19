@@ -6,12 +6,12 @@ img.map {
   width: 100%;
 }
 img.button {
-  height: 15%;
-  width: 15%;
+  height: 100%;
+  width: 100%;
 }
 button.textmaker {
-  height:15%;
-  width:15%;
+  height:60;
+  width:60;
   background:transparent;
   position:absolute;
   top:25%;
