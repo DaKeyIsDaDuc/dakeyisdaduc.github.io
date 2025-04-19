@@ -6,6 +6,11 @@ img.map {
   width: 100%;
 }
 img.button {
-  height:5%;
-  width:5%;
+  height: 10%;
+  width: 10%;
+}
+button.textmaker {
+  height:10%;
+  width:10%;
+  background:transparent;
 }
