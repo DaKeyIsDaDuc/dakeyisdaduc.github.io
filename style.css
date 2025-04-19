@@ -5,3 +5,7 @@ img.map {
   height: 100%;
   width: 100%;
 }
+img.button {
+  height:5%;
+  width:5%;
+}
