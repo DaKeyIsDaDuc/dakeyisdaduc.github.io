@@ -10,11 +10,12 @@ img.button {
   width: 100%;
 }
 button.textmaker {
-  height:60;
-  width:60;
+  height:30;
+  width:30;
   background:transparent;
+  border:0 solid transparent;
   position:absolute;
-  top:25%;
-  left:25%;
+  top:calc(25%-15);
+  left:calc(25%-15);
   display:block;
 }
