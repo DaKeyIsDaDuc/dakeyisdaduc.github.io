@@ -1,6 +1,9 @@
 body {
   background-color: lightblue;
 }
+#background {
+  background-size: cover;
+}
 img.map {
   height: 100%;
   width: 100%;
