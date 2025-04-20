@@ -2,6 +2,74 @@
 <html>
 <head>
   <link rel="stylesheet" href="style.css">
+  <script>
+    var curropen = 'none';
+    function summonpopup(popupid) {
+      document.getElementById(popupid).style.display='inline';
+      document.getElementById('popup').style.display='inline';
+      document.getElementById('buttoncloser').style.display='inline';
+      curropen=popupid;
+      document.getElementById('popup').addEventListener('click', function checkifclickout(e){  
+        if (curropen!='none') {
+          if (!document.getElementById(curropen).contains(e.target)){
+            closepopups();
+          }
+        }
+      });
+    }
+    function closepopups() {
+      if (curropen != 'none') {
+        document.getElementById(curropen).style.display='none';
+        document.getElementById('popup').style.display='none';
+        document.getElementById('buttoncloser').style.display='none';
+        curropen == 'none';
+        document.getElementById('popup').removeEventListener('click',checkifclickout)
+      }
+    }
+  </script>
+</head>
+<body>
+  <div id="background">  
+    <img class="map" src="map.jpeg" alt="Map of Indian Ocean">
+  </div>
+  <button class="textmaker basra" onclick="summonpopup('aboutbasra')"> <img class="button" src="button.svg" alt="Button"></button>
+  <button class="textmaker mogadishu" onclick="summonpopup('aboutmogadishu')"> <img class="button" src="button.svg" alt="Button"></button>
+  <button class="textmaker kilwa" onclick="summonpopup('aboutkilwa')"> <img class="button" src="button.svg" alt="Button"></button>
+  <button class="textmaker alquzlum" onclick="summonpopup('aboutalquzlum')"><img class="button" src="button.svg" alt="Button"></button>
+  <button class="textmaker guangzhou" onclick="summonpopup('aboutguangzhou')"><img class="button" src="button.svg" alt="Button"></button>
+  <button class="textmaker indonesia" onclick="summonpopup('aboutindonesia')"><img class="button" src="button.svg" alt="Button"></button>
+  <button class="textmaker pandua" onclick="summonpopup('aboutbengal')"><img class="button" src="button.svg" alt="Button"></button>
+  <button class="textmaker calicut" onclick="summonpopup('aboutcalicut')"><img class="button" src="button.svg" alt="Button"></button>
+  <button class="textmaker zhenghe" onclick="summonpopup('aboutzhenghe')"><img class="button" src="button.svg" alt="Button"></button>
+  <button class="textmaker dagama" onclick="summonpopup('aboutdagama')"><img class="button" src="button.svg" alt="Button"></button>
+  <div id="popup"> 
+    <div class="about" id="aboutbasra"> 
+      <h1>Basra</h1>
+      <p>By 680 CE, this city lying on the coast of the Persian Gulf already had a sizable migrant population, although the oppression of this minority coupled with inter-sect struggles made this port a city of conflict. This city was regularly ravaged by insurrection and rebellion, such as the early Battle of the Camel, a battle that finalized the schism between Sunni and Shi’a Muslims due to the capturing of Ali, the Zanj rebellion, a slave uprising organized by African laborers brought into the country to assist in agriculture, and the devastation sustained from the invasion of the Qarmatians, an extremist religious sect. In its heyday, Basra was a home for Islamic learning, literature, and philosophy, in addition to being an extremely important transshipment port for sending goods to the capital of the Abbasids, Baghdad. </p>
+    </div>
+    <div class="about" id="aboutguangzhou">
+      <h1>Cities of China</h1>
+      <h2>Guangzhou</h2>
+      <p>Guangzhou was a trading port serving various Chinese kingdoms and empires, starting with the Wu, although it reached its peak during the time of the early Song. This city was often the first place where new ideas and goods entered China, with many Hindu, Muslim, and Buddhist traders setting anchor there. During the later Song, it was gradually supplanted by Quanzhou as the empire’s primary port. </p>
+      <h2>Quanzhou</h2>
+      <p>Quanzhou was a more northern Chinese port during the Medieval period. During the Song dynasty, it was utilized for oceangoing shipbuilding, which allowed the Chinese to rival and depose the monopoly of Arab traders on Indian Ocean trade routes. During the Yuan dynasty, this port was known even to the likes of Marco Polo and Ibn Battuta, who lived half the world away. </p>
+    </div>
+    <div class="about" id="aboutmogadishu"> 
+      <h1>Mogadishu</h1>
+      <p>The area of the city-state of Mogadishu had likely existed and served as a port since ancient times, using a ship known as the beden to connect places like Egypt, Phoenicia, and the Roman Empire with African merchants. Later, after the collapse of the Roman Empire, the African town began trading with Persia and Arabia, spreading the usage of the beden to Oman. Mogadishu was a major participant in the rise and spread of Indian Ocean trade routes, and by the eleventh century was known to be one of the largest cities in the horn of Africa. It created a sultanate in the twelfth century, before being vassalized by the Ajuran sultanate, an inland state. Owing to its great size and important economic status, Mogadishu was absorbed into the core part of the sultanate by 1500. Even before that, by the time of Ibn Battuta, it was known to be one of the greatest cities on the Somali coast and a significant center of Islamic trade. </p>
+    </div>
+    <div class="about" id="aboutkilwa"> 
+      <h1>Kilwa</h1>
+      <p>Kilwa, also known as Kilwa Kisiwani, was the southernmost of the major Swahili trading cities, amongst others such as Mombasa, Zanzibar, and Pate, in addition to over 400 smaller settlements. The Swahili language, as the word itself, is a mixture of Bantu and Arabic, exemplifying both African origins and Arabian cultural diffusion. By the early first millennium CE, trade between different cities was already prospering. As ships improved and cities grew more populous, trade networks merged and Kilwa found itself connected to Egypt, Arabia, Persian, India, Southeast Asia, and even beyond. Kilwa mainly thrived on exports obtained from inland, such as gold, slaves, giraffes, ivory, and gemstones. </p>
+    </div>
+    <div class="about" id="aboutzhenghe"> 
+      <h1>Zheng He</h1>
+      <p>Zheng He was a Chinese explorer, widely regarded as the most important, from the time of the Ming Dynasty. In a rare period of Chinese outward negotiation, Zheng He took seven “treasure voyages” outwards to exchange tribute with places as far away as Kilwa and Hormuz, on the Persian Gulf. He brought back things like giraffes and gemstones. </p>
+    </div>
+    <div class="about" id="aboutdagama"> <!DOCTYPE HTML>
+<html>
+<head>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <div id="background">  
@@ -37,5 +105,37 @@
       <h1>Kilwa</h1>
       <p>Kilwa, also known as Kilwa Kisiwani, was the southernmost of the major Swahili trading cities, amongst others such as Mombasa, Zanzibar, and Pate, in addition to over 400 smaller settlements. The Swahili language, as the word itself, is a mixture of Bantu and Arabic, exemplifying both African origins and Arabian cultural diffusion. By the early first millennium CE, trade between different cities was already prospering. As ships improved and cities grew more populous, trade networks merged and Kilwa found itself connected to Egypt, Arabia, Persian, India, Southeast Asia, and even beyond. Kilwa mainly thrived on exports obtained from inland, such as gold, slaves, giraffes, ivory, and gemstones. </p>
     </div>
+</body>
+</html>
+
+      <h1>Vasco Da Gama</h1>
+      <p>Vasco da Gama was the first person to sail from Europe to India around the horn of Africa. The Portuguese explorer thus begun a new age of global sea trade and imperialism, allowing Western Europeans access to the vibrant Indian Ocean trade routes, distrupting them as the technologically advanced European militaries attacked various ports, wanting to take control of prosperous areas.</p>
+    </div>
+    <div class="about" id="aboutalquzlum"> 
+      <h1>Vasco Da Gama</h1>
+      <p>Also known as Clysma or Klisima, this relatively unknown Egyptian city was an important port for the transports of goods between the Indian Ocean and the Mediterranean Sea. It was used for shipbuilding and the transport of wheat. </p>
+    </div>
+    <div class="about" id="aboutalquzlum"> 
+      <h1>Al-Quzlum</h1>
+      <p>Also known as Clysma or Klisima, this relatively unknown Egyptian city was an important port for the transports of goods between the Indian Ocean and the Mediterranean Sea. It was used for shipbuilding and the transport of wheat. </p>
+    </div>
+    <div class="about" id="aboutcalicut"> 
+      <h1>Kozhikode</h1>
+      <p>Kozhikode, also known as Calicut, was a major port, cotton weaving center, and the birthplace of the eponymic calico. In addition, it was a major source of spices such as pepper and ginger, along with tea. </p>
+    </div>
+    <div class="about" id="aboutbengal"> 
+      <h1>Bengal Sultanate</h1>
+      <p>Starting in 1298 AD, Bengal came under Muslim rule. While at times the Bengali rulers paid tribute to Delhi, they were often independent. Through the port of Satgaon, the sultanate exported rice, cotton, and long pepper to Arab merchants. </p>
+    </div>
+    <div class="about" id="aboutindonesia"> 
+      <h1>Cities of Insular Southeast Asia</h1>
+      <h2>Palembang</h2>
+      <p>Palembang, the capital of Sriwijaya, has been a major city for the last 13 centuries. Sriwijaya thrived on trade, as they controlled many valuable straits, which allowed them to toll and restrict trade between China and the Indian Ocean for their own benefit. It was eventually ousted from its dominance by its Javanese neighbors.</p>
+      <h2>Surabaya</h2>
+      <p>Surabaya, in Java, was the capital of the Majapahit Empire, one of said ousters. The Majapahit empire was established after Vijaya, a prince whose father previously ruled the area, collaborated with Mongol forces to kill the previous ruler. After the task was successfully accomplished, the prince turned upon the mongols and expelled them from Java, thus beginning the Majapahit empire. It behaved similarly to the earlier Sriwijaya empire, controlling and taxing trade routes to gain money and prestige. Unfortunately for the empire, its glory was short-lived, as a series of deaths amongst royalty and the encroaching threat of Islam incited doom.</p>
+    </div>
+    </div>
+    <button class="closebutton" id="buttoncloser" onclick="closepopups()">Close</button>
+  </div>
 </body>
 </html>
