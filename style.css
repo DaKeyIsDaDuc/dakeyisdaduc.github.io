@@ -33,7 +33,11 @@ body {
   border-style: outset;
   border-width: 5px;
   border-color: gray;
-  overflow-y:auto
+  overflow-y:auto;
+}
+
+.tabable {
+  white-space:pre-wrap;
 }
 
 p {
