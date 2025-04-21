@@ -2,7 +2,6 @@
 <html>
 <head>
   <link rel="stylesheet" href="style.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script>
     var curropen = 'none';
     function summonpopup(popupid) {
@@ -24,6 +23,7 @@
         document.getElementById('popup').style.display='none';
         document.getElementById('buttoncloser').style.display='none';
         curropen == 'none';
+        document.getElementById('popup').removeEventListener('click',checkifclickout)
       }
     }
   </script>
@@ -42,17 +42,20 @@
   <button class="textmaker calicut" onclick="summonpopup('aboutcalicut')"><img class="button" src="button.svg" alt="Button"></button>
   <button class="textmaker zhenghe" onclick="summonpopup('aboutzhenghe')"><img class="button" src="button.svg" alt="Button"></button>
   <button class="textmaker dagama" onclick="summonpopup('aboutdagama')"><img class="button" src="button.svg" alt="Button"></button>
+  <button class="textmaker iotr" onclick="summonpopup('aboutiotr')"><img class="button" src="button.svg" alt="Button"></button>
   <div id="popup"> 
     <div class="about" id="aboutbasra"> 
       <h1>Basra</h1>
       <p>By 680 CE, this city lying on the coast of the Persian Gulf already had a sizable migrant population, although the oppression of this minority coupled with inter-sect struggles made this port a city of conflict. This city was regularly ravaged by insurrection and rebellion, such as the early Battle of the Camel, a battle that finalized the schism between Sunni and Shi’a Muslims due to the capturing of Ali, the Zanj rebellion, a slave uprising organized by African laborers brought into the country to assist in agriculture, and the devastation sustained from the invasion of the Qarmatians, an extremist religious sect. In its heyday, Basra was a home for Islamic learning, literature, and philosophy, in addition to being an extremely important transshipment port for sending goods to the capital of the Abbasids, Baghdad. </p>
     </div>
     <div class="about" id="aboutguangzhou">
-      <h1>Cities of China</h1>
+      <h1>Cities of East Asia</h1>
       <h2>Guangzhou</h2>
       <p>Guangzhou was a trading port serving various Chinese kingdoms and empires, starting with the Wu, although it reached its peak during the time of the early Song. This city was often the first place where new ideas and goods entered China, with many Hindu, Muslim, and Buddhist traders setting anchor there. During the later Song, it was gradually supplanted by Quanzhou as the empire’s primary port. </p>
       <h2>Quanzhou</h2>
       <p>Quanzhou was a more northern Chinese port during the Medieval period. During the Song dynasty, it was utilized for oceangoing shipbuilding, which allowed the Chinese to rival and depose the monopoly of Arab traders on Indian Ocean trade routes. During the Yuan dynasty, this port was known even to the likes of Marco Polo and Ibn Battuta, who lived half the world away. </p>
+      <h2>Heijō-kyō</h2>
+      <p>Heijō-kyō was the capital of Japan during a major epidemic caused by smallpox. This is known because the Japanese had recently adopted the Chinese custom of recording outbreaks of disease. In addition, this epidemic, like all major epidemics, was caused when a disease had entered an unprepared population. This is often caused by travel and trade, showing Japans connection to the major trade routes of that time, which just so happened to include the Indian Ocean Trade Routes.</p>
     </div>
     <div class="about" id="aboutmogadishu"> 
       <h1>Mogadishu</h1>
@@ -80,7 +83,7 @@
     </div>
     <div class="about" id="aboutcalicut"> 
       <h1>Kozhikode</h1>
-      <p>Kozhikode, also known as Calicut, was a major port, cotton weaving center, and the birthplace of the eponymic calico. In addition, it was a major source of spices such as pepper and ginger, along with tea. </p>
+      <p>Kozhikode, also known as Calicut, was a major port, cotton weaving center, and the birthplace of the eponymic calico. In addition, it was a major source of spices such as pepper and ginger, along with tea. This exemplifies how India contained some of the richest areas in the world before the <b><i>British</i></b> came.</p>
     </div>
     <div class="about" id="aboutbengal"> 
       <h1>Bengal Sultanate</h1>
@@ -93,6 +96,49 @@
       <h2>Surabaya</h2>
       <p>Surabaya, in Java, was the capital of the Majapahit Empire, one of said ousters. The Majapahit empire was established after Vijaya, a prince whose father previously ruled the area, collaborated with Mongol forces to kill the previous ruler. After the task was successfully accomplished, the prince turned upon the mongols and expelled them from Java, thus beginning the Majapahit empire. It behaved similarly to the earlier Sriwijaya empire, controlling and taxing trade routes to gain money and prestige. Unfortunately for the empire, its glory was short-lived, as a series of deaths amongst royalty and the encroaching threat of Islam incited doom.</p>
     </div>
+    <div class="about" id="aboutiotr"> 
+      <h1>Indian Ocean Trade Routes Project</h1>
+      <h2>What are the Indian Ocean Trade Routes?</h2>
+      <p>The Indian Ocean Trade Routes were a vast and prosperous network of trade routes within the Indian Ocean. </p>
+      <h2>Common Ships</h2>
+      <p>Many ships were used during this era to transport goods from one place to another. Large shipbuilding sites included Al-Quzlum, Quanzhou, and Mogadishu. Al-Quzlum produced many dhows, small trading ships that were common in the reason, although the word likely came from Swahili. Quanzhou built thousands of wooden junks, including the great ships of Zheng He's treasure fleet, which were rumored to be over 400 feet long. Mogadishu build time-honored beden, sewn ships used for both fishing and trade, and eventually exported this ship to Oman. While journeys across the ocean happened relatively quickly, monsoon winds prevented sailors from returning for 6 months. In addition to having to stay for this long away from home, the open seas often proved stormy, capsizing many smaller boats.</p>
+      <h2>Trade Today</h2>
+      <p>Today, trade is still common in the Indian Ocean, and small ships like dhows are still used, although dwarfed by modern ironclad container ships. While monsoon winds are no longer required for trade in the modern world, every sailor must still be careful not to capsize or sink.</p>
+      <h1><b>So what are you waiting for? Go press some buttons! The close button is in the top right corner.</b></h1>
+      <p>
+
+
+
+
+      Works Cited:
+      “735–737 Japanese Smallpox Epidemic.” Wikipedia, Wikimedia Foundation, 7 Apr. 2025, en.wikipedia.org/wiki/735%E2%80%93737_Japanese_smallpox_epidemic. 
+
+      “Basra.” Encyclopædia Britannica, Encyclopædia Britannica, inc., www.britannica.com/place/Basra. Accessed 20 Apr. 2025. 
+
+      BENTLEY, Jerry. Traditions and Encounters. McGraw-Hill US Higher Ed USE, 2022.
+
+      Cartwright, Mark. “Kilwa.” World History Encyclopedia, https://www.worldhistory.org#organization, 20 Apr. 2025, www.worldhistory.org/Kilwa/. 
+
+      Cartwright, Mark. “The Seven Voyages of Zheng He.” World History Encyclopedia, https://www.worldhistory.org#organization, 14 Mar. 2024, www.worldhistory.org/article/1334/the-seven-voyages-of-zheng-he/. 
+
+      “Chinese Trade in the Indian Ocean.” Asia Society, 25 July 2017, asiasociety.org/education/chinese-trade-indian-ocean.
+
+      Eaton, Richard M. “The Rise of Islam and the Bengal Frontier.” The Rise of Islam and the Bengal Frontier, 1204–1760, publishing.cdlib.org/ucpressebooks/view?docId=ft067n99v9&chunk.id=ch03&toc.depth=1&toc.id=ch03&brand=ucpress. Accessed 20 Apr. 2025. 
+
+      “Guangzhou.” Encyclopædia Britannica, Encyclopædia Britannica, inc., 20 Apr. 2025, www.britannica.com/place/Guangzhou. 
+
+      “History of Mogadishu.” Wikipedia, Wikimedia Foundation, 28 Feb. 2025, en.wikipedia.org/wiki/History_of_Mogadishu. 
+      
+      “Kozhikode.” Encyclopædia Britannica, Encyclopædia Britannica, inc., 7 Apr. 2025, www.britannica.com/place/Kozhikode. 
+
+      “Majapahit Empire.” Encyclopædia Britannica, Encyclopædia Britannica, inc., www.britannica.com/place/Majapahit-empire. Accessed 20 Apr. 2025. 
+
+      MANGUIN, PIERRE-YVES. “PALEMBANG AND SRIWIJAYA: AN EARLY MALAY HARBOUR-CITY REDISCOVERED.” Journal of the Malaysian Branch of the Royal Asiatic Society, vol. 66, no. 1 (264), 1993, pp. 23–46. JSTOR, http://www.jstor.org/stable/41486188. Accessed 11 Apr. 2025.
+
+      “The Port of Al-Qulzum and its Importance in the Light of the Arabic Papyri of the Period from the 1st Century to the 3rd Century A.H.” Minia Journal of Tourism and Hospitality Research, EKB, https://mjthr.journals.ekb.eg/article_342139_c24e24e02b7293bdac6dcbf7da4375c2.pdf. Accessed 11 Apr. 2025.
+
+      “Vasco Da Gama.” Encyclopædia Britannica, Encyclopædia Britannica, inc., 20 Feb. 2025, www.britannica.com/biography/Vasco-da-Gama.
+      </p>
     </div>
     <button class="closebutton" id="buttoncloser" onclick="closepopups()">Close</button>
   </div>
